@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head >
+    <meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Edwar Castaño">
+	<title>Dimensiones</title>
+	
+	<link rel="stylesheet" href="Dimensiones.css"></link>
+
+</head>
+<body>
+    <div class="Main">
+	    <h2>Dimensiones</h2>
+		<p >Las dimensiones de tu pantalla son:</p>
+		<p class="resultados"id="medida1"></p>
+			
+		<p >Las dimensiones disponibles de tu pantalla son:</p>
+		<p class="resultados"id="medida2"></p>
+		
+		<p >La profundidad del color en pantalla es:</p>
+		<p class="resultados"id="medida3"></p>
+		
+		<p >La profundidad en pixeles de la pantalla es:</p>
+		<p class="resultados"id="medida4"></p>
+		
+	   <p id="medida5"></p>
+		
+
+	</div>  
+
+    <div class="movil1">
+
+    </div>	
+	<div class="movil2">
+
+    </div>
+	<script>
+	    document.getElementById("medida1").innerHTML = screen.width + ' ' +  'X' + ' ' + screen.height + 'px';
+		
+	    document.getElementById("medida2").innerHTML = screen.availWidth + ' ' +  'X' + ' ' + screen.availHeight + 'px';
+		
+	    document.getElementById("medida3").innerHTML = screen.colorDepth  + 'px';
+		
+	    document.getElementById("medida4").innerHTML = screen.pixelDepth  + 'px';
+		
+		
+	</script>
+	<script>
+	    var d = new Date();
+		document.getElementById("medida5").innerHTML= d;
+	</script>
+	
+<!--
+Huawei Y5 2018:      360 x 720px
+Xiaomi Redmi note 7: 393 x 851px.
+
+
+
+-->
+
+</body>
+</html>

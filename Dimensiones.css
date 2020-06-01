@@ -1,0 +1,40 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+    background:#000;
+}
+.Main {
+    margin:auto;
+    width:70%;
+	margin-top:50px;
+	border:1px solid #909090;
+	box-shadow:5px 5px 5px #505050;
+}
+h2 {  
+    color:#909090;
+	text-align:center;
+}
+p {
+    color:#909090;
+	text-align:center;
+	margin:6px;
+}
+.resultados {
+	color:#fff;
+	background:rgba(0, 182, 255, 1);
+}
+.movil1{
+	width:360px;
+	height:720px;
+	border:1px solid #909090;
+	box-shadow:5px 5px 5px #505050;
+}
+.movil2 {
+	width:393px;
+	height:851px;
+	border:1px solid #909090;
+	box-shadow:5px 5px 5px #505050;
+	
+}
