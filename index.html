@@ -10,8 +10,9 @@
 	<link rel="stylesheet" href="Dimensiones.css"></link>
 
 </head>
-<body>
-    <div class="Main">
+<body onresize="automedidas()" onload="automedidas()">
+<div class="contMain">
+    <div class="Main" id="divMain">
 	    <h2>Dimensiones</h2>
 		<p >Las dimensiones de tu pantalla son:</p>
 		<p class="resultados"id="medida1"></p>
@@ -29,8 +30,9 @@
 		
 
 	</div>  
-
+</div>
    	<script>
+		function automedidas(){
 	    document.getElementById("medida1").innerHTML = screen.width + ' ' +  'X' + ' ' + screen.height + 'px';
 		
 	    document.getElementById("medida2").innerHTML = screen.availWidth + ' ' +  'X' + ' ' + screen.availHeight + 'px';
@@ -39,6 +41,12 @@
 		
 	    document.getElementById("medida4").innerHTML = screen.pixelDepth  + 'px';
 		
+		    var divmain = document.getElementById('divMain');
+			var widthScreen = screen.width/1.3;
+			var heightScreen = screen.height/1.3;
+			divmain.style.width = widthScreen+'px';
+			divmain.style.height = heightScreen+'px';
+		 }
 		
 	</script>
 	<script>
