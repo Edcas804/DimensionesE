@@ -3,13 +3,13 @@
 	padding:0;
 }
 body {
-    background:#000;
+    background: linear-gradient(to bottom, #000, #303030);
 }
 .Main {
     margin:auto;
     width:70%;
 	margin-top:50px;
-	border:1px solid #909090;
+    border:1px solid #909090;
 	box-shadow:5px 5px 5px #505050;
 }
 h2 {  
@@ -25,16 +25,4 @@ p {
 	color:#fff;
 	background:rgba(0, 182, 255, 1);
 }
-.movil1{
-	width:360px;
-	height:720px;
-	border:1px solid #909090;
-	box-shadow:5px 5px 5px #505050;
-}
-.movil2 {
-	width:393px;
-	height:851px;
-	border:1px solid #909090;
-	box-shadow:5px 5px 5px #505050;
-	
-}
+
